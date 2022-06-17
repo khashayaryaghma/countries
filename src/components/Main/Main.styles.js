@@ -7,5 +7,7 @@ const StyledMain = styled.main`
     background-color: ${(props) =>
     props.bgColor === "gray" ? "rgb(250, 250, 250)" : ""};
     margin-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 `;
 export default StyledMain;
