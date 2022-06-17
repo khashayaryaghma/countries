@@ -3,7 +3,7 @@ import getData from "../../api/getData";
 
 import data from "./data";
 
-export default function () {
+function Main() {
 
     // const [data, setData]=useState([])
 
@@ -13,6 +13,9 @@ export default function () {
     //     });
     // }, [data]);
 
-    return <main></main>;
+    return (
+
+    )
 
 }
+export default Main;
