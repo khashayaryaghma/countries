@@ -16,7 +16,7 @@ function Main() {
 
     return (
         <StyledMain bgColor="gray">
-            <Cards/>
+            <Cards data={data}/>
         </StyledMain>
     )
 
