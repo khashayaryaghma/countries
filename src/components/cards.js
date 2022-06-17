@@ -13,9 +13,9 @@ export default function Cards() {
 
   return (
       <main>
-          {data?.map((country) => {
+          {/* {data?.map((country) => {
               
-          })}
+          })} */}
       </main>
   );
 }
