@@ -1,7 +1,7 @@
 // import { useEffect, useState } from "react";
 // import getData from "../../api/getData";
 import StyledMain from "./Main.styles";
-import Cards from "../Cards";
+import Cards from "../Cards/Cards";
 import data from "../data";
 
 function Main() {
