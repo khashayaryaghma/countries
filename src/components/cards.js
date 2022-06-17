@@ -1,21 +1,22 @@
-import { useEffect, useState } from "react";
-import getData from "../api/getData";
 
-export default function Cards() {
+import { Card } from "react-bootstrap";
 
-    const [data, setData]=useState([])
 
-    useEffect(() => {
-        getData().then((data) => {
-            setData(data)
-        });
-    }, [data]);
+
+export default function Cards({data}) {
 
   return (
-      <main>
-          {/* {data?.map((country) => {
-              
-          })} */}
-      </main>
+      <>
+          {data?.map((country) => {
+              return(
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={country.flags.svg}/>
+                    <Card.Body>
+                        <Card.Title>{country.name}</Card.Title>
+                    </Card.Body>
+                </Card>
+              )
+          })}
+      </>
   );
 }

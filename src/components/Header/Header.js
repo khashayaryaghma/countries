@@ -1,9 +1,8 @@
 import { useState } from "react";
-import styled from "styled-components";
+import StyledHeader from "./Header.styles";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const styledHeader = styled.header`
-    
-`
+
+
 function Header() {
     const [mode, setMode] = useState("Light Mode");
 
@@ -12,7 +11,7 @@ function Header() {
     }
 
     return (
-        <styledHeader className="d-flex p-4 justify-content-between align-items-center">
+        <StyledHeader variant="boxShadow" className="d-flex p-4 justify-content-between align-items-center">
             <h1 style={{fontSize:"23px"}}>Where in the world?</h1>
             <div
                 onClick={changeMode}
@@ -27,7 +26,7 @@ function Header() {
 
                 <span>{mode}</span>
             </div>
-        </styledHeader>
+        </StyledHeader>
     );
 }
 
