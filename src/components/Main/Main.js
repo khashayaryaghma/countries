@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
-import getData from "../../api/getData";
-
+// import { useEffect, useState } from "react";
+// import getData from "../../api/getData";
+import StyledMain from "./Main.styles";
+import Cards from "../cards";
 import data from "./data";
 
 function Main() {
@@ -14,7 +15,9 @@ function Main() {
     // }, [data]);
 
     return (
-
+        <StyledMain>
+            <Cards/>
+        </StyledMain>
     )
 
 }
