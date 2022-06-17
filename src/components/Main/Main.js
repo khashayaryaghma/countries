@@ -1,8 +1,8 @@
 // import { useEffect, useState } from "react";
 // import getData from "../../api/getData";
 import StyledMain from "./Main.styles";
-import Cards from "../cards";
-import data from "./data";
+import Cards from "../Cards";
+import data from "../data";
 
 function Main() {
 
@@ -15,7 +15,7 @@ function Main() {
     // }, [data]);
 
     return (
-        <StyledMain>
+        <StyledMain bgColor="gray">
             <Cards/>
         </StyledMain>
     )
