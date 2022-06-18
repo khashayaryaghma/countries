@@ -16,7 +16,7 @@ function Main() {
 
     return (
         <>
-            <div className="d-flex justify-content-between p-5">
+            <div className="d-flex justify-content-between p-5 flex-wrap">
                 <div class="input-group mb-3" style={{ width: "18rem" }}>
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">
@@ -34,10 +34,12 @@ function Main() {
                     aria-label="Default select example"
                     style={{ width: "13rem", height: "38px" }}
                 >
-                    <option>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option>Filter by Region</option>
+                    <option value="1">Africa</option>
+                    <option value="2">America</option>
+                    <option value="3">Asia</option>
+                    <option value="3">Europe</option>
+                    <option value="3">Oceania</option>
                 </Form.Select>
             </div>
 
