@@ -14,24 +14,28 @@ function Main() {
         setData(Data);
     }, [data]);
 
+
+    function select(){
+        console.log("hi");
+    }
     return (
         <>
             <div className="d-flex justify-content-between p-5 flex-wrap">
                 <div
-                    class="input-group mb-3"
+                    className="input-group mb-3"
                     style={{
                         width: "18rem",
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                 >
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">
+                    <div className="input-group-prepend">
+                        <span className="input-group-text" id="basic-addon1">
                             🔍
                         </span>
                     </div>
                     <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Search for a country..."
                     />
                 </div>
@@ -43,13 +47,14 @@ function Main() {
                         height: "38px",
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
+                    onChange={select}
                 >
                     <option>Filter by Region</option>
-                    <option value="1">Africa</option>
-                    <option value="2">America</option>
-                    <option value="3">Asia</option>
-                    <option value="3">Europe</option>
-                    <option value="3">Oceania</option>
+                    <option value="Africa">Africa</option>
+                    <option value="America">America</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
                 </Form.Select>
             </div>
 
