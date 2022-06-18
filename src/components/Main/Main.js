@@ -9,20 +9,35 @@ function Main() {
 
     useEffect(() => {
         // getData().then((data) => {
-        //     setData(data)
+            setData(Data)
         // });
         // setData(Data);
         
-    }, [data]);
+    }, []);
 
 
     function select(e){
-        console.log(e.target.value);
-        let newData = Data.filter((ele)=>{
-            return ele.region === e.target.value
+        if(e.target.value !=="none"){
+          let newData = Data.filter((ele)=>{
+            return ele.region.toLowerCase() === e.target.value.toLowerCase();
         })
-        console.log(newData);
-        setData(newData)
+        setData(newData)  
+        }else{
+            setData(Data)
+        }
+        
+    }
+
+    function search(e){
+        if(e.target.value !==""){
+          let newData = Data.filter((ele)=>{
+            return ele.name.toLowerCase().includes(e.target.value.toLowerCase())
+        })
+        setData(newData)  
+        }else{
+            setData(Data)
+        }
+        
     }
     return (
         <>
@@ -43,6 +58,7 @@ function Main() {
                         type="text"
                         className="form-control"
                         placeholder="Search for a country..."
+                        onKeyUp={(e)=>search(e)}
                     />
                 </div>
 
@@ -55,7 +71,7 @@ function Main() {
                     }}
                     onChange={(e)=>select(e)}
                 >
-                    <option>Filter by Region</option>
+                    <option value="none">Filter by Region</option>
                     <option value="Africa">Africa</option>
                     <option value="America">America</option>
                     <option value="Asia">Asia</option>
