@@ -8,8 +8,8 @@ function Main() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        // getData().then((data) => {
-        // setData(Data);
+        // getData().then((firstData) => {
+        // setData(firstData);
         // });
         setData(Data);
     }, []);
