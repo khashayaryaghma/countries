@@ -17,7 +17,13 @@ function Main() {
     return (
         <>
             <div className="d-flex justify-content-between p-5 flex-wrap">
-                <div class="input-group mb-3" style={{ width: "18rem" }}>
+                <div
+                    class="input-group mb-3"
+                    style={{
+                        width: "18rem",
+                        boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
+                    }}
+                >
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">
                             🔍
@@ -32,7 +38,11 @@ function Main() {
 
                 <Form.Select
                     aria-label="Default select example"
-                    style={{ width: "13rem", height: "38px" }}
+                    style={{
+                        width: "13rem",
+                        height: "38px",
+                        boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
+                    }}
                 >
                     <option>Filter by Region</option>
                     <option value="1">Africa</option>
