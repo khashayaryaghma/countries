@@ -49,16 +49,14 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                 >
-                    <div className="input-group-prepend">
-                        <span className="input-group-text" id="basic-addon1">
+                        <span className="input-group-text">
                             🔍
                         </span>
-                    </div>
                     <input
                         type="text"
                         className="form-control"
                         placeholder="Search for a country..."
-                        onKeyUp={(e)=>search(e)}
+                        onKeyUp={(e) => search(e)}
                     />
                 </div>
 
@@ -69,7 +67,7 @@ function Main() {
                         height: "38px",
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
-                    onChange={(e)=>select(e)}
+                    onChange={(e) => select(e)}
                 >
                     <option value="none">Filter by Region</option>
                     <option value="Africa">Africa</option>

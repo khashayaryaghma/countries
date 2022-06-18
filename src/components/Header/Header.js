@@ -8,6 +8,12 @@ function Header() {
 
     function changeMode() {
         setMode(mode === "Light Mode" ? "Dark Mode" : "Light Mode");
+        const main = document.querySelector("main")
+        if(mode === "Dark Mode"){
+            main.style.backgroundColor = "rgb(32, 44, 55)"
+        }else{
+            
+        }
     }
 
     return (
