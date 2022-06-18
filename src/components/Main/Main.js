@@ -11,14 +11,16 @@ function Main() {
         // getData().then((data) => {
         //     setData(data)
         // });
-        setData(Data);
+        // setData(Data);
         
     }, [data]);
 
 
     function select(e){
         console.log(e.target.value);
-        let newData = Data.region.includes(e.target.value);
+        let newData = Data.filter((ele)=>{
+            return ele.region === e.target.value
+        })
         console.log(newData);
         setData(newData)
     }
@@ -51,7 +53,7 @@ function Main() {
                         height: "38px",
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
-                    onChange={select}
+                    onChange={(e)=>select(e)}
                 >
                     <option>Filter by Region</option>
                     <option value="Africa">Africa</option>
