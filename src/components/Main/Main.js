@@ -9,35 +9,35 @@ function Main() {
 
     useEffect(() => {
         // getData().then((data) => {
-            setData(Data)
+        setData(Data);
         // });
         // setData(Data);
-        
     }, []);
 
-
-    function select(e){
-        if(e.target.value !=="none"){
-          let newData = Data.filter((ele)=>{
-            return ele.region.toLowerCase() === e.target.value.toLowerCase();
-        })
-        setData(newData)  
-        }else{
-            setData(Data)
+    function select(e) {
+        if (e.target.value !== "none") {
+            let newData = Data.filter((ele) => {
+                return (
+                    ele.region.toLowerCase() === e.target.value.toLowerCase()
+                );
+            });
+            setData(newData);
+        } else {
+            setData(Data);
         }
-        
     }
 
-    function search(e){
-        if(e.target.value !==""){
-          let newData = Data.filter((ele)=>{
-            return ele.name.toLowerCase().includes(e.target.value.toLowerCase())
-        })
-        setData(newData)  
-        }else{
-            setData(Data)
+    function search(e) {
+        if (e.target.value !== "") {
+            let newData = Data.filter((ele) => {
+                return ele.name
+                    .toLowerCase()
+                    .includes(e.target.value.toLowerCase());
+            });
+            setData(newData);
+        } else {
+            setData(Data);
         }
-        
     }
     return (
         <>
@@ -49,9 +49,7 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                 >
-                        <span className="input-group-text">
-                            🔍
-                        </span>
+                    <span className="input-group-text">🔍</span>
                     <input
                         type="text"
                         className="form-control"
