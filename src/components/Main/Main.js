@@ -9,9 +9,9 @@ function Main() {
 
     useEffect(() => {
         // getData().then((data) => {
-        setData(Data);
-        // });
         // setData(Data);
+        // });
+        setData(Data);
     }, []);
 
     function select(e) {
