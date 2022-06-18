@@ -11,8 +11,11 @@ function Header() {
     }
 
     return (
-        <StyledHeader variant="boxShadow" className="d-flex justify-content-between align-items-center">
-            <h1 style={{fontSize:"23px"}}>Where in the world?</h1>
+        <StyledHeader
+            variant="boxShadow"
+            className="d-flex justify-content-between align-items-center"
+        >
+            <h1 style={{ fontSize: "23px" }}>Where in the world?</h1>
             <div
                 onClick={changeMode}
                 role="button"
@@ -23,6 +26,12 @@ function Header() {
                 ) : (
                     <FontAwesomeIcon icon="fa-solid fa-moon" />
                 )} */}
+
+                {mode === "Light Mode" ? (
+                    "☀️ "
+                ) : (
+                   "🌙 " 
+                )}
 
                 <span>{mode}</span>
             </div>
