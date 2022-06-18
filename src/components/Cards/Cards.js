@@ -9,7 +9,7 @@ export default function Cards({data}) {
       <>
           {data?.map((country) => {
               return (
-                  <StyledCards variant="boxShadow" className="mb-5">
+                  <StyledCards variant="boxShadow" className="mb-5" role="button">
                       <Card style={{ width: "18rem" }}>
                           <Card.Img
                               variant="top"
