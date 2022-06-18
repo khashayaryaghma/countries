@@ -40,7 +40,7 @@ function Main() {
         }
     }
     return (
-        <>
+        <div className="back">
             <div className="d-flex justify-content-between p-5 flex-wrap">
                 <div
                     className="input-group mb-3"
@@ -79,7 +79,7 @@ function Main() {
             <StyledMain bgColor="gray">
                 <Cards data={data} />
             </StyledMain>
-        </>
+        </div>
     );
 }
 export default Main;
