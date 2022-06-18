@@ -20,7 +20,7 @@ function Main() {
                 <div class="input-group mb-3" style={{ width: "18rem" }}>
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">
-                            🔎
+                            🔍
                         </span>
                     </div>
                     <input
@@ -32,7 +32,7 @@ function Main() {
 
                 <Form.Select
                     aria-label="Default select example"
-                    style={{ width: "13rem",  height:"38px" }}
+                    style={{ width: "13rem", height: "38px" }}
                 >
                     <option>Open this select menu</option>
                     <option value="1">One</option>
