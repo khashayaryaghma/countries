@@ -12,11 +12,15 @@ function Main() {
         //     setData(data)
         // });
         setData(Data);
+        
     }, [data]);
 
 
-    function select(){
-        console.log("hi");
+    function select(e){
+        console.log(e.target.value);
+        let newData = Data.region.includes(e.target.value);
+        console.log(newData);
+        setData(newData)
     }
     return (
         <>
