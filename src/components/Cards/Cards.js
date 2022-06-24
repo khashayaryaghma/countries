@@ -15,7 +15,7 @@ export default function Cards({data}) {
                       role="button"
                       key={uuidv4()}
                   >
-                      <Card style={{ width: "18rem" }}>
+                      <Card style={{ width: "18rem" }} className="cardcolor">
                           <Card.Img
                               variant="top"
                               src={country.flags.svg}

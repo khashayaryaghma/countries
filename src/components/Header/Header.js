@@ -10,18 +10,22 @@ function Header() {
         setMode(mode === "Light Mode" ? "Dark Mode" : "Light Mode");
         const main = document.querySelector(".back");
         const header = document.querySelector("header");
-        const card = document.querySelector(".cards");
+        const card = document.querySelector(".cardcolor");
         
         if(mode === "Dark Mode"){
             header.style.backgroundColor = null;
             header.style.color = null;
             main.classList.remove("bg-dark");
-            card.classList.remove("bg-dark");
+
+            card.style.backgroundColor = null;
+            card.style.color = null;
         }else{
             header.style.backgroundColor = "rgb(43, 55, 67)"
             header.style.color = "rgb(255, 255, 255)";
             main.classList.add("bg-dark");
-            card.classList.remove("bg-dark");
+
+            card.style.backgroundColor = "rgb(43, 55, 67)";
+            card.style.color = "rgb(255, 255, 255)";
         }
     }
 
