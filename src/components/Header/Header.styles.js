@@ -8,5 +8,11 @@ const StyledHeader = styled.header`
     padding: 1.5rem;
     padding-left: 4rem;
     padding-right: 4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
 `;
 export default StyledHeader;
