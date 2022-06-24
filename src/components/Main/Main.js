@@ -40,7 +40,7 @@ function Main() {
         }
     }
     return (
-        <div className="back">
+        <div className="highdark">
             <div className="d-flex justify-content-between p-5 flex-wrap">
                 <div
                     className="input-group mb-3"
@@ -49,10 +49,10 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                 >
-                    <span className="input-group-text back">🔍</span>
+                    <span className="input-group-text back lowdark">🔍</span>
                     <input
                         type="text"
-                        className="form-control"
+                        className="form-control lowdark"
                         placeholder="Search for a country..."
                         onKeyUp={(e) => search(e)}
                     />
@@ -66,7 +66,7 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                     onChange={(e) => select(e)}
-                    className=""
+                    className="lowdark"
                 >
                     <option value="none">Filter by Region</option>
                     <option value="Africa">Africa</option>
