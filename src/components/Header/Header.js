@@ -10,8 +10,10 @@ function Header() {
 
         const lowDark = document.querySelectorAll(".lowdark");
         const highDark = document.querySelectorAll(".highdark");
+        const body = document.querySelector("body")
 
         if (mode === "Dark Mode") {
+            body.style.backgroundColor = null
             lowDark.forEach((ele) => {
                 ele.style.backgroundColor = null;
                 ele.style.color = null;
@@ -20,6 +22,7 @@ function Header() {
                 ele.classList.remove("bg-dark");
             });
         } else {
+            body.classList.add("bg-dark")
             lowDark.forEach((ele) => {
                 ele.style.backgroundColor = "rgb(43, 55, 67)";
                 ele.style.color = "rgb(255, 255, 255)";
