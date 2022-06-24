@@ -13,8 +13,9 @@ function Main() {
         // });
         setData(Data);
     }, []);
-
+    const searc = document.querySelector(".search")
     function select(e) {
+        searc.value = ""
         if (e.target.value !== "none") {
             let newData = Data.filter((ele) => {
                 return (
@@ -26,8 +27,9 @@ function Main() {
             setData(Data);
         }
     }
-
+    const sele = document.querySelector(".select")
     function search(e) {
+        sele.value = "none";
         if (e.target.value !== "") {
             let newData = Data.filter((ele) => {
                 return ele.name
@@ -52,7 +54,7 @@ function Main() {
                     <span className="input-group-text lowdark">🔍</span>
                     <input
                         type="text"
-                        className="form-control lowdark"
+                        className="form-control lowdark search"
                         placeholder="Search for a country..."
                         onKeyUp={(e) => search(e)}
                     />
@@ -66,7 +68,7 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                     onChange={(e) => select(e)}
-                    className="lowdark"
+                    className="lowdark select"
                 >
                     <option value="none">Filter by Region</option>
                     <option value="Africa">Africa</option>
