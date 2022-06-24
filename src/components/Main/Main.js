@@ -49,7 +49,7 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                 >
-                    <span className="input-group-text back lowdark">🔍</span>
+                    <span className="input-group-text lowdark">🔍</span>
                     <input
                         type="text"
                         className="form-control lowdark"
