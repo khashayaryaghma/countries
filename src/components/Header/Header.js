@@ -4,13 +4,14 @@ import StyledHeader from "./Header.styles";
 
 function Header() {
     const [mode, setMode] = useState("Light Mode");
-
+    const body = document.querySelector("body");
+    body.style.backgroundColor = "rgb(250, 250, 250)";
     function changeMode() {
         setMode(mode === "Light Mode" ? "Dark Mode" : "Light Mode");
 
         const lowDark = document.querySelectorAll(".lowdark");
         const highDark = document.querySelectorAll(".highdark");
-        const body = document.querySelector("body")
+        
 
         if (mode === "Dark Mode") {
             body.classList.remove("bg-dark");
