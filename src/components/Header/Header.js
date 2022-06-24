@@ -15,11 +15,13 @@ function Header() {
         if(mode === "Dark Mode"){
             header.style.backgroundColor = null;
             header.style.color = null;
-            main.classList.remove("bg-dark")
+            main.classList.remove("bg-dark");
+            card.classList.remove("bg-dark");
         }else{
             header.style.backgroundColor = "rgb(43, 55, 67)"
             header.style.color = "rgb(255, 255, 255)";
-            main.classList.add("bg-dark")
+            main.classList.add("bg-dark");
+            card.classList.remove("bg-dark");
         }
     }
 
