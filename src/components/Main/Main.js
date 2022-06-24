@@ -49,7 +49,7 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                 >
-                    <span className="input-group-text">🔍</span>
+                    <span className="input-group-text back">🔍</span>
                     <input
                         type="text"
                         className="form-control"
@@ -66,6 +66,7 @@ function Main() {
                         boxShadow: "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
                     }}
                     onChange={(e) => select(e)}
+                    className=""
                 >
                     <option value="none">Filter by Region</option>
                     <option value="Africa">Africa</option>
