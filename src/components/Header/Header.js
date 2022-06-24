@@ -13,7 +13,7 @@ function Header() {
         const body = document.querySelector("body")
 
         if (mode === "Dark Mode") {
-            body.style.backgroundColor = null
+            body.classList.remove("bg-dark")
             lowDark.forEach((ele) => {
                 ele.style.backgroundColor = null;
                 ele.style.color = null;
