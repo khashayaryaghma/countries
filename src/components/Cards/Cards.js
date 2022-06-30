@@ -1,7 +1,7 @@
 
 import { Card } from "react-bootstrap";
 import StyledCards from "./Cards.styles";
-import { v4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid"; 
 
 export default function Cards({data}) {
 
@@ -9,6 +9,7 @@ export default function Cards({data}) {
       <>
           {data?.map((country) => {
               return (
+                
                   <StyledCards
                       variant="boxShadow"
                       className="mb-5"

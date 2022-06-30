@@ -1,13 +1,10 @@
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import Home from "./components/Home";
+
 
 function App() {
 
     return (
-      <div style={{backgroundColor:"rgb(250, 250, 250)"}}>
-        <Header/>
-        <Main/>
-      </div>
+      <Home/>
     );
 }
 
