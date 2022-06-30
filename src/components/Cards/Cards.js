@@ -9,7 +9,10 @@ export default function Cards({data}) {
       <>
           {data?.map((country) => {
               return (
-                  <Link to={`/country/${country.name}`}>
+                  <Link
+                      to={`/country/${country.name}`}
+                      style={{ textDecoration: "none",color: "inherit" }}
+                  >
                       <StyledCards
                           variant="boxShadow"
                           className="mb-5"

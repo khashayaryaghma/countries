@@ -1,4 +1,5 @@
 import Home from "./components/Home";
+import Country from "./components/country/Country";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header"
 function App() {
@@ -8,7 +9,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/country/:name" element={null} />
+                <Route path="/country/:name" element={<Country/>} />
             </Routes>
         </Router>
     );
