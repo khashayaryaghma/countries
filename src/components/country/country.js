@@ -52,7 +52,6 @@ export default function Country() {
                         style={{
                             listStyle: "none",
                             lineHeight: "2.2rem",
-                            marginTop: "2.2rem",
                             fontSize: ".9rem",
                         }}
                     >
@@ -68,10 +67,21 @@ export default function Country() {
                     </ul>
                 </div>
                 {state.borders && (
-                    <div>
-                        Border Countries:{" "}
+                    <div
+                        style={{ fontSize: ".9rem" }}
+                        className="d-flex align-items-baseline flex-wrap align-content-start"
+                    >
+                        Border Countries:
                         {state.borders.map((ele) => (
-                            <span className="btn" key={uuidv4()}>
+                            <span
+                                className="btn m-1"
+                                style={{
+                                    boxShadow:
+                                        "rgb(0 0 0 / 15%) 0px 0px 10px 0px",
+                                    fontSize: ".7rem",
+                                }}
+                                key={uuidv4()}
+                            >
                                 {ele}
                             </span>
                         ))}
