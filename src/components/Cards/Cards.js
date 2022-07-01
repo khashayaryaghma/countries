@@ -1,8 +1,9 @@
-
 import { Card } from "react-bootstrap";
 import StyledCards from "./Cards.styles";
 import { v4 as uuidv4 } from "uuid"; 
 import { Link } from "react-router-dom";
+
+
 export default function Cards({data}) {
 
   return (
