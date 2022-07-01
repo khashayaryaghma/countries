@@ -27,12 +27,12 @@ export default function Country() {
                     <img
                         src={state.flags.svg}
                         alt="flag"
-                        style={{ width: "30rem" }}
+                        style={{ width: "28rem" }}
                     />
                 </div>
                 <div>
                     <h4>{state.name}</h4>
-                    <ul style={{ listStyle: "none", lineHeight: "2.2rem" }}>
+                    <ul style={{ listStyle: "none", lineHeight: "2.2rem", fontSize:".9rem" }}>
                         <li>Native Name: {state.nativeName}</li>
                         <li>Population: {state.population}</li>
                         <li>Region: {state.region}</li>
@@ -46,6 +46,7 @@ export default function Country() {
                             listStyle: "none",
                             lineHeight: "2.2rem",
                             marginTop: "2.2rem",
+                            fontSize:".9rem"
                         }}
                     >
                         <li>Top Level Domain: {state.topLevelDomain}</li>
