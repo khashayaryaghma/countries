@@ -12,6 +12,7 @@ export default function Cards({data}) {
                   <Link
                       to={`/country/${country.name}`}
                       style={{ textDecoration: "none",color: "inherit" }}
+                      state ={country}
                   >
                       <StyledCards
                           variant="boxShadow"
