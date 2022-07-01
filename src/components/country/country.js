@@ -66,7 +66,7 @@ export default function Country() {
                         </li>
                     </ul>
                 </div>
-                {/* <div>Border Countries: {state.borders.map((ele)=> <span className="btn">{ele}</span>)}</div> */}
+                {state.borders && <div>Border Countries: {state.borders.map((ele)=> <span className="btn">{ele}</span>)}</div>}
             </StyledContainer>
         </StyledCountry>
     );
