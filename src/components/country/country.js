@@ -43,9 +43,12 @@ export default function Country() {
                 <div>
                     <ul style={{ listStyle: "none", lineHeight: "2.2rem", marginTop:"2.2rem" }}>
                         <li>Top Level Domain: {state.topLevelDomain}</li>
-                        <li>Currencies: {state.currencies[0].name}</li>
-                        <li>Languages: {state.languages[0].name}</li>
+                        <li>Currencies: {state.currencies.map((ele)=>ele.name + " ")}</li>
+                        <li>Languages: {state.languages.map((ele)=>ele.name+ " ")}</li>
                     </ul>
+                </div>
+                <div>
+
                 </div>
             </StyledContainer>
         </StyledCountry>
