@@ -1,9 +1,10 @@
 import { useLocation, Link } from "react-router-dom";
 import { StyledCountry, StyledContainer } from "./Country.styles";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Country() {
     const { state } = useLocation();
-    console.log(state);
+
     return (
         <StyledCountry>
             <div>
@@ -66,7 +67,16 @@ export default function Country() {
                         </li>
                     </ul>
                 </div>
-                {state.borders && <div>Border Countries: {state.borders.map((ele)=> <span className="btn">{ele}</span>)}</div>}
+                {state.borders && (
+                    <div>
+                        Border Countries:{" "}
+                        {state.borders.map((ele) => (
+                            <span className="btn" key={uuidv4()}>
+                                {ele}
+                            </span>
+                        ))}
+                    </div>
+                )}
             </StyledContainer>
         </StyledCountry>
     );
