@@ -32,6 +32,20 @@ export default function Country() {
                 </div>
                 <div>
                     <h4>{state.name}</h4>
+                    <ul style={{ listStyle: "none", lineHeight: "2.2rem" }}>
+                        <li>Native Name: {state.nativeName}</li>
+                        <li>Population: {state.population}</li>
+                        <li>Region: {state.region}</li>
+                        <li>Sub Region: {state.subregion}</li>
+                        <li>Capital: {state.capital}</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul style={{ listStyle: "none", lineHeight: "2.2rem", marginTop:"2.2rem" }}>
+                        <li>Top Level Domain: {state.topLevelDomain}</li>
+                        <li>Currencies: {state.currencies[0].name}</li>
+                        <li>Languages: {state.languages[0].name}</li>
+                    </ul>
                 </div>
             </StyledContainer>
         </StyledCountry>
