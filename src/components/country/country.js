@@ -9,7 +9,7 @@ export default function Country() {
             <div>
                 <Link
                     to={"/"}
-                    className="btn m-5"
+                    className="btn m-5 lowdark"
                     style={{
                         textDecoration: "none",
                         color: "inherit",
@@ -22,7 +22,7 @@ export default function Country() {
                 </Link>
             </div>
 
-            <StyledContainer>
+            <StyledContainer className="highdark">
                 <div>
                     <img
                         src={state.flags.svg}
@@ -32,7 +32,13 @@ export default function Country() {
                 </div>
                 <div>
                     <h4>{state.name}</h4>
-                    <ul style={{ listStyle: "none", lineHeight: "2.2rem", fontSize:".9rem" }}>
+                    <ul
+                        style={{
+                            listStyle: "none",
+                            lineHeight: "2.2rem",
+                            fontSize: ".9rem",
+                        }}
+                    >
                         <li>Native Name: {state.nativeName}</li>
                         <li>Population: {state.population}</li>
                         <li>Region: {state.region}</li>
@@ -46,7 +52,7 @@ export default function Country() {
                             listStyle: "none",
                             lineHeight: "2.2rem",
                             marginTop: "2.2rem",
-                            fontSize:".9rem"
+                            fontSize: ".9rem",
                         }}
                     >
                         <li>Top Level Domain: {state.topLevelDomain}</li>

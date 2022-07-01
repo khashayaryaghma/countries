@@ -21,6 +21,7 @@ function Header() {
             });
             highDark.forEach((ele) => {
                 ele.classList.remove("bg-dark");
+                ele.classList.remove("text-light")
             });
         } else {
             body.classList.add("bg-dark")
@@ -30,6 +31,7 @@ function Header() {
             });
             highDark.forEach((ele) => {
                 ele.classList.add("bg-dark");
+                ele.classList.add("text-light");
             });
         }
     }
