@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-const StyledCountry = styled.section`
+export const StyledCountry = styled.section`
 
 `
 
-export default StyledCountry;
+export const StyledContainer = styled.section`
+    display: flex;
+`
