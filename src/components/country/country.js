@@ -41,15 +41,25 @@ export default function Country() {
                     </ul>
                 </div>
                 <div>
-                    <ul style={{ listStyle: "none", lineHeight: "2.2rem", marginTop:"2.2rem" }}>
+                    <ul
+                        style={{
+                            listStyle: "none",
+                            lineHeight: "2.2rem",
+                            marginTop: "2.2rem",
+                        }}
+                    >
                         <li>Top Level Domain: {state.topLevelDomain}</li>
-                        <li>Currencies: {state.currencies.map((ele)=>ele.name + " ")}</li>
-                        <li>Languages: {state.languages.map((ele)=>ele.name+ " ")}</li>
+                        <li>
+                            Currencies:{" "}
+                            {state.currencies.map((ele) => ele.name + " ")}
+                        </li>
+                        <li>
+                            Languages:{" "}
+                            {state.languages.map((ele) => ele.name + " ")}
+                        </li>
                     </ul>
                 </div>
-                <div>
-
-                </div>
+                {/* <div>Border Countries: {state.borders.map((ele)=> <span className="btn">{ele}</span>)}</div> */}
             </StyledContainer>
         </StyledCountry>
     );
