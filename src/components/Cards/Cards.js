@@ -11,14 +11,14 @@ export default function Cards({data}) {
               return (
                   <Link
                       to={`/country/${country.name}`}
-                      style={{ textDecoration: "none",color: "inherit" }}
-                      state ={country}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                      state={country}
+                      key={uuidv4()}
                   >
                       <StyledCards
                           variant="boxShadow"
                           className="mb-5"
                           role="button"
-                          key={uuidv4()}
                       >
                           <Card style={{ width: "18rem" }} className="lowdark">
                               <Card.Img
