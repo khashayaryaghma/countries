@@ -13,6 +13,7 @@ function App() {
 
         const lowDark = document.querySelectorAll(".lowdark");
         const highDark = document.querySelectorAll(".highdark");
+        
         if (mode === "Dark Mode") {
             body.classList.remove("bg-dark");
             lowDark.forEach((ele) => {
@@ -39,10 +40,10 @@ function App() {
         <Router>
             <Header mode={mode} changeMode={changeMode} />
             <Routes>
-                <Route path="/" element={<Home mode={mode} />} />
+                <Route path="/" element={<Home />} />
                 <Route
                     path="/country/:name"
-                    element={<Country mode={mode} />}
+                    element={<Country />}
                 />
             </Routes>
         </Router>
